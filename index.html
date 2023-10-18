@@ -12,11 +12,8 @@
     <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body class="page theme_dark">
-    <header class="header">
-      <h1 class="heading header__title content-section">Карты подскажут</h1>
-    </header>
-    
-    <main class="content content-section">
+    <header class="header content-section">
+      <h1 class="heading header__title">Карты подскажут</h1>
       <nav class="header__menu">
         <div class="header__logo">
           <svg xmlns="http://www.w3.org/2000/svg" width="135" height="25">
@@ -46,6 +43,9 @@
             </li>
           </ul>
       </nav>
+    </header>
+    
+    <main class="content content-section">
       <h2 class="heading content__title">Креативный подход к решению проблем</h2>
       <div class="content__text-block content__text-block_type_first-lettered">
         <p class="content__paragraph">Творческие кризисы, кажется, рано или поздно испытывает любой человек. Часто бывает так, что вы сталкиваетесь с проблемой, не можете решить её с первого раза и начинаете думать, что вообще ни на что не способны. Мозг запоминает эту модель поведения, и на следующий день вам не хочется делать вообще ничего — ведь всё равно ничего не получится.</p>
@@ -59,17 +59,17 @@
 
       <figure class="content__figure">
         <picture>
-          <source srcset="./images/cards-1x.avif, ./images/cards-2x.avif" type="image/avif">
-          <source srcset="./images/cards-1x.webp, ./images/cards-2x.webp" type="image/webp">
+          <source srcset="./images/cards-1x.avif 1x, ./images/cards-2x.avif 2x" type="image/avif">
+          <source srcset="./images/cards-1x.webp 1x, ./images/cards-2x.webp 2x" type="image/webp">
           <img 
             class="content__picture"
-            src="./images/cards-1x.png" 
-            srcset="./images/cards-1x.png, ./images/cards-2x.png"
+            srcset="./images/cards-1x.png 1x, ./images/cards-2x.png 2x"
             alt="на столе лежит телефон iPhone, рядом ручка и визитка с надписью 'Trust in the you of now'"
+            loading="lazy"
           >
         </picture>
         <figcaption>
-          <span class="content__picture-caption">Колода Oblique Strategies</span>
+          <p class="content__picture-caption">Колода Oblique Strategies</p>
         </figcaption>
       </figure>
 
