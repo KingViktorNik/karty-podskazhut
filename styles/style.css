@@ -217,9 +217,8 @@ figure {
   align-content: center;
   margin: 7% 0 0;
   border: 1px solid var(--text-color, #312A4E);
-  padding: 10vi;
-  inline-size: 100%;
-  block-size: calc(3 / 4 * 100vi);
+  padding: 20px;
+  aspect-ratio: 4 / 3;
 }
 
 .theme_dark .content__card {
